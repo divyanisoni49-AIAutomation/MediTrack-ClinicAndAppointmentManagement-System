@@ -9,6 +9,7 @@ public abstract class Person extends MedicalEntity{
     private String phone;
     private String email;
     private String address;
+    private String name;
 
     // Constructor with chaining via super
     public Person(String id, String name, int age, String gender, String phone, String email, String address) {
