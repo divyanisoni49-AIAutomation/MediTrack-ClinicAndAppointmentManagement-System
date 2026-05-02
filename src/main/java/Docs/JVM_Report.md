@@ -6,6 +6,10 @@ Loading: Reads the .class file and creates a Class object in the heap.
 Linking: Verifies bytecode integrity, prepares static variables with default values, and resolves symbolic references.
 Initialization: Executes static {} blocks and initializes static fields.
 
+Loading → brings class into memory
+Linking → verifies + prepares
+Initialization → assigns values
+
 In MediTrack: Every class with a static {} block (e.g., IdGenerator, MedicalEntity, Doctor, Patient) demonstrates class loading. When IdGenerator is first accessed, the JVM's Class Loader loads it, triggering the static block that prints the initialization message.
 Three Built-in Class Loaders:
 
